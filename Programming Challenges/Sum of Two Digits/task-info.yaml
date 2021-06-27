@@ -45,13 +45,13 @@ files:
   visible: true
   placeholders:
   - offset: 220
-    length: 20
+    length: 26
     placeholder_text: write your code here
     initial_state:
       length: 20
       offset: 220
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3 (this comment tells the grading system at Coursera to use python3 rather than python3)
@@ -68,4 +68,8 @@ files:
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/sLjtY/programming-assignment-1-sum-of-two-digits/discussions
 status: Unchecked
+feedback:
+  message: Local tests passed, please <a href="https://www.coursera.org/learn/algorithmic-toolbox/programming/sLjtY/programming-assignment-1-sum-of-two-digits/submission">submit
+    to Coursera</a>
+  time: Sun, 27 Jun 2021 22:24:27 UTC
 record: -1
