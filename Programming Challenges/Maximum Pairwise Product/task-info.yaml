@@ -3,47 +3,6 @@ files:
 - name: logo.png
   visible: false
   learner_created: false
-- name: maximum_pairwise_product.py
-  visible: true
-  placeholders:
-  - offset: 439
-    length: 47
-    placeholder_text: type here
-    initial_state:
-      length: 9
-      offset: 439
-    initialized_from_dependency: false
-    selected: true
-    status: Unchecked
-  text: |
-    # python3
-
-
-    def max_pairwise_product_naive(numbers):
-        assert len(numbers) >= 2
-        assert all(0 <= x <= 2 * 10 ** 5 for x in numbers)
-
-        product = 0
-
-        for i in range(len(numbers)):
-            for j in range(i + 1, len(numbers)):
-                product = max(product, numbers[i] * numbers[j])
-
-        return product
-
-
-    def max_pairwise_product(numbers):
-        assert len(numbers) >= 2
-        assert all(0 <= x <= 2 * 10 ** 5 for x in numbers)
-        type here
-
-
-    if __name__ == '__main__':
-        n = int(input())
-        input_numbers = list(map(int, input().split()))
-        assert len(input_numbers) == n
-        print(max_pairwise_product(input_numbers))
-  learner_created: false
 - name: maximum_pairwise_product_unit_tests.py
   visible: true
   placeholders:
@@ -118,6 +77,47 @@ files:
 
         if all_tests_passed:
             passed()
+  learner_created: false
+- name: maximum_pairwise_product.py
+  visible: true
+  placeholders:
+  - offset: 439
+    length: 47
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 439
+    initialized_from_dependency: false
+    selected: true
+    status: Unchecked
+  text: |
+    # python3
+
+
+    def max_pairwise_product_naive(numbers):
+        assert len(numbers) >= 2
+        assert all(0 <= x <= 2 * 10 ** 5 for x in numbers)
+
+        product = 0
+
+        for i in range(len(numbers)):
+            for j in range(i + 1, len(numbers)):
+                product = max(product, numbers[i] * numbers[j])
+
+        return product
+
+
+    def max_pairwise_product(numbers):
+        assert len(numbers) >= 2
+        assert all(0 <= x <= 2 * 10 ** 5 for x in numbers)
+        type here
+
+
+    if __name__ == '__main__':
+        n = int(input())
+        input_numbers = list(map(int, input().split()))
+        assert len(input_numbers) == n
+        print(max_pairwise_product(input_numbers))
   learner_created: false
 feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/Xscmz/programming-assignment-1-maximum-pairwise-product/discussions
 status: Unchecked
