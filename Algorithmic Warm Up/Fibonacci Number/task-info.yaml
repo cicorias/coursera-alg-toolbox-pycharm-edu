@@ -1,35 +1,5 @@
 type: edu
 files:
-- name: fibonacci_number_unit_tests.py
-  visible: true
-  placeholders:
-  - offset: 334
-    length: 7
-    placeholder_text: type here
-    initial_state:
-      length: 9
-      offset: 334
-    initialized_from_dependency: false
-    selected: true
-    status: Unchecked
-  text: |
-    import unittest
-    from fibonacci_number import fibonacci_number, fibonacci_number_naive
-
-
-    class TestFibonacciNumber(unittest.TestCase):
-        def test_small(self):
-            for n in range(8):
-                self.assertEqual(fibonacci_number(n), fibonacci_number_naive(n))
-
-        def test_large(self):
-            for (n, Fn) in [(30, 832040), (35, type here), (40, 102334155)]:
-                self.assertEqual(fibonacci_number(n), Fn)
-
-
-    if __name__ == '__main__':
-        unittest.main()
-  learner_created: false
 - name: logo.png
   visible: false
   learner_created: false
@@ -66,11 +36,41 @@ files:
         if all_tests_passed:
             passed()
   learner_created: false
+- name: fibonacci_number_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 334
+    length: 7
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 334
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from fibonacci_number import fibonacci_number, fibonacci_number_naive
+
+
+    class TestFibonacciNumber(unittest.TestCase):
+        def test_small(self):
+            for n in range(8):
+                self.assertEqual(fibonacci_number(n), fibonacci_number_naive(n))
+
+        def test_large(self):
+            for (n, Fn) in [(30, 832040), (35, type here), (40, 102334155)]:
+                self.assertEqual(fibonacci_number(n), Fn)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
 - name: fibonacci_number.py
   visible: true
   placeholders:
-  - offset: 225
-    length: 210
+  - offset: 230
+    length: 421
     placeholder_text: type here
     initial_state:
       length: 9
@@ -106,5 +106,5 @@ status: Unchecked
 feedback:
   message: Local tests passed, please <a href="https://www.coursera.org/learn/algorithmic-toolbox/programming/b66y2/programming-assignment-2-algorithmic-warm-up/submission">submit
     to Coursera</a>
-  time: Mon, 28 Jun 2021 01:49:30 UTC
+  time: Sat, 03 Jul 2021 21:49:22 UTC
 record: -1
